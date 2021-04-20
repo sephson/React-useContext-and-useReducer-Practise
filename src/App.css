@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242424;
+}
+
+.App {
+  text-align: center;
+  color: aliceblue;
+}
+
+.input-field {
+  margin-top: 5rem;
+
+  display: grid;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: aliceblue;
+  padding: 0.5rem;
+  background-color: #242424;
+}
+
+.paragraph {
+  font-size: 1rem;
+  color: aliceblue;
+  padding: 0.5rem;
+  height: 10rem;
+  background-color: #242424;
+}
+
+.addnote-btn {
+  padding: 0.4rem;
+  color: aliceblue;
+  background-color: tomato;
+  margin-top: 0.7rem;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+.notes {
+  background-color: rgb(104, 104, 250);
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+}
+
+.notes-header {
+  margin-bottom: 1rem;
+}
+
+.all-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.del-btn {
+  padding: 0.4rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 940px) {
+  .all-notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .all-notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .all-notes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
